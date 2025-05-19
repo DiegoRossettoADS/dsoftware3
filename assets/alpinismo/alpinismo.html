@@ -19,3 +19,106 @@
         </nav>
         <img src="../../assets/background.jpg" alt ="imagem de fundo">   
     </header>
+
+    <div class="resumo">
+        <h1>Alpinismo</h1>
+        <div class="resumoC">
+        <p>
+            Alpinismo é uma atividade desportiva de ascensão em montanhas, picos, rochas escarpadas e similares, 
+            acima dos 2500 m, que exige equipamento de montanha apropriado, uma técnica de progressão que lhe é 
+            própria, boa preparação física e, em alguns casos, a presença de um guia de alta montanha com uma 
+            formação específica, para escolher o percurso e assegurar a cordada. Alpinista é nome dado aquele que 
+            exerce esse desporto ou atividade.
+        </p>
+        <p>
+            <strong>Algumas das suas variantes:</strong>
+        </p>
+        </div>
+    </div>
+
+    <main>
+        <div Class="lista">
+
+            <h1>1°</h1>
+            <h2>Escalada em Rocha</h2>
+            <img src="../../assets/alpinismo/escaladaemrocha.jpg" alt="imagem do esporte">
+            <p><strong>Tradicional (ou Clássica)</strong></p>
+            <p>Na escalada tradicional, os escaladores utilizam equipamentos para proteger a progressão ao longo 
+                da rocha. Eles inserem peças de proteção, como nuts e friends, em fissuras e fendas na rocha, e 
+                então amarram a corda a esses equipamentos para garantir a segurança. A escalada tradicional exige 
+                habilidades técnicas sólidas e uma compreensão profunda dos sistemas de segurança.
+            </p>
+
+            <h1>2°</h1>
+            <h2>Esportiva</h2>
+            <img src="../../assets/alpinismo/escaladaesportiva.jpg" alt="imagem do esporte">
+            <p>Na escalada esportiva, as vias são equipadas com ancoragens permanentes, como chapeletas, que os 
+                escaladores usam para prender a corda enquanto avançam pela rocha. As vias tendem a ser mais 
+                curtas e mais intensas, com ênfase na força e na técnica de movimento.
+            </p>
+
+            <h1>3°</h1>
+            <h2>Boulder</h2>
+            <img src="../../assets/alpinismo/boulder.jpg" alt="imagem do esporte">
+            <p>O boulder é uma forma de escalada em que os escaladores sobem blocos de rocha de pequena altura, 
+                geralmente sem o uso de cordas mas com uso de crashs pad e segues de corpo para proteção do chão. 
+                A ênfase está nos movimentos técnicos e na resolução de problemas, com os escaladores trabalhando 
+                em problemas (sequências de movimentos específicos) em vez de subir uma rota inteira.
+            </p>
+
+            <img src="../../assets/alpinismo/escalada-livre.jpg" alt="imagem do esporte">
+            <p>Independentemente do tipo de escalada que você escolher, a escalada é uma atividade emocionante que 
+                desafia tanto o corpo quanto a mente. Seja você um escalador experiente procurando novos desafios 
+                ou um iniciante curioso em busca de aventura, há uma modalidade de escalada esperando por você. 
+                Pratique com segurança, respeite o meio ambiente e prepare-se para descobrir novos limites 
+                enquanto escala para novas alturas!
+            </p>
+            
+        </div>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popupContent">
+
+          <span id="fecharpopup" class="botao-fechar">&times;</span>
+          <h2>Deixe seu feedback</h2>
+
+          <form id="formulario">
+            <label for="avaliacao">Nota (1 a 5):</label>
+            <input type="number" id="avaliacao" name="avaliacao" min="1" max="5" required><br><br>
+            <label for="comentario">Comentário:</label><br>
+            <textarea style="resize: none;" id="comentario" name="comentario" rows="5" cols="30"></textarea><br><br>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+    </div>
+
+    <div id="popuplogin" class="popuplogin" style="display: none;">
+        <div class="loginContent">
+            <span id="fecharpopuplogin" class="botao-fecharlogin">&times;</span>
+
+            <form id="loginForm">
+            <h2>Insira os dados:</h2>
+            
+            <div class="dados">
+            <label for="txtemail">E-mail:</label>
+            <input id="txtemail" type="text" placeholder = "digite o login"><br>
+            <label for="txtsenha">Senha:</label>
+            <input id="txtsenha" type="password" placeholder = "digite a senha"><br>
+            </div>
+
+            <button type="submit" id="btnlogin">Acessar</button><br><br>
+
+            <p>não tem uma conta?     <a href="#">Criar conta</a></p>
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 - Todos os direitos reservados</p>
+    </footer>
+    <script src = "../../script.js"></script>
+</body>
+
+</html>

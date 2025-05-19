@@ -19,3 +19,119 @@
         </nav>
         <img src="../../assets/background.jpg" alt ="imagem de fundo">   
     </header>
+
+    <div class="resumo">
+        <h1>Como funciona o skateboard?</h1>
+        <div class="resumoC">
+        <p>
+            O skate é uma prática realizada em uma prancha, chamada de shape, que contém quatro rodas pequenas 
+            em eixos conhecidos por trucks. A parte da frente da prancha é chamada de nose e a de trás, de tail. 
+            Os praticantes realizam manobras e diferentes movimentações sobre a prancha, seja sobre o solo ou 
+            mesmo em obstáculos. 
+        </p>
+        <p>
+            Os 4 tipos principais de skate são skate de rua (street), skate vertical, longboard e cruiser. 
+            Cada um deles é projetado para um estilo de prática diferente. 
+        </p>
+        <p>
+            <strong>Detalhes sobre cada modalidade:</strong>
+        </p>
+        </div>
+    </div>
+
+    <main>
+        <div Class="lista">
+
+            <h1>1°</h1>
+            <h2>Skate street</h2>
+            <img src="../../assets/skateboarding/skatestreet.webp" alt="imagem do esporte">
+            <p>O skate street é resultado da prática do skate em meio aos objetos e obstáculos que compõem o 
+            cenário urbano, tais como: escadas, corrimões, bancos, hidrantes e guias. É a modalidade mais 
+            popular do skate em todo o mundo, inclusive está presente nas Olimpíadas.
+            </p>
+
+            <h1>2°</h1>
+            <h2>Skate vertical</h2>
+            <img src="../../assets/skateboarding/vertical.webp" alt="imagem do esporte">
+            <p>O skate vertical é realizado em pistas fabricadas em madeira ou concreto que apresentam paredes 
+            e transições. A modalidade não é tão popular quanto o street, uma vez que exige mais experiência e 
+            técnica para executá-la. Veja as subdivisões do vertical:
+            </p>
+            <p><strong>Bowl:</strong> pistas semelhantes a piscinas arredondadas com 3 metros de profundidade e paredes que 
+            formam 90º em relação ao chão. É o tipo de pista mais comum em parques ao ar livre de skate, 
+            utilizada para manobras com velocidade.
+            </p>
+            <p><strong>Half-pipe:</strong> pistas em formato de “U” com cerca de 4 metros de altura.</p>
+
+            <h1>3°</h1>
+            <h2>Freestyle</h2>
+            <img src="../../assets/skateboarding/freestyle.webp" alt="imagem do esporte">
+            <p>O freestyle é a mais antiga das modalidades do skate. As manobras são utilizadas no solo sem o 
+            uso de obstáculos.
+            </p>
+
+            <h1>4°</h1>
+            <h2>Downhill</h2>
+            <img src="../../assets/skateboarding/downhill.webp" alt="imagem do esporte">
+            <p>O downhill é a modalidade de skate em que os praticantes descem ladeiras e executam manobras 
+            chamadas de slides.
+            </p>
+            <p><strong>Downhill:</strong> com o uso de um skate maior, chamado de longboard, nessa modalidade os skatistas 
+            descem ladeiras com a realização de manobras slides. Devido ao formato diferente do objeto, os 
+            praticantes conseguem realizar movimentações diferentes.
+            </p>
+            <p><strong>Downhill stand-up:</strong> descida de ladeira, morro ou qualquer terro que possua inclinação da forma 
+            mais rápida possível utilizando técnicas de curva e para aumentar a velocidade do skate.
+            </p>
+            <p><strong>Downhill slide:</strong> rodas mais duras e escorregadias são utilizadas nos skates, que realizam as manobras de 
+            slides também ao descer ladeiras. Há semelhança no objeto com o que é utilizado no street.
+            </p>
+
+        </div>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popupContent">
+
+          <span id="fecharpopup" class="botao-fechar">&times;</span>
+          <h2>Deixe seu feedback</h2>
+
+          <form id="formulario">
+            <label for="avaliacao">Nota (1 a 5):</label>
+            <input type="number" id="avaliacao" name="avaliacao" min="1" max="5" required><br><br>
+            <label for="comentario">Comentário:</label><br>
+            <textarea style="resize: none;" id="comentario" name="comentario" rows="5" cols="30"></textarea><br><br>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+    </div>
+
+    <div id="popuplogin" class="popuplogin" style="display: none;">
+        <div class="loginContent">
+            <span id="fecharpopuplogin" class="botao-fecharlogin">&times;</span>
+
+            <form id="loginForm">
+            <h2>Insira os dados:</h2>
+            
+            <div class="dados">
+            <label for="txtemail">E-mail:</label>
+            <input id="txtemail" type="text" placeholder = "digite o login"><br>
+            <label for="txtsenha">Senha:</label>
+            <input id="txtsenha" type="password" placeholder = "digite a senha"><br>
+            </div>
+
+            <button type="submit" id="btnlogin">Acessar</button><br><br>
+
+            <p>não tem uma conta?     <a href="#">Criar conta</a></p>
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 - Todos os direitos reservados</p>
+    </footer>
+    <script src = "../../script.js"></script>
+</body>
+
+</html>

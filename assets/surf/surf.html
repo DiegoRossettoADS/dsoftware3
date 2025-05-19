@@ -19,3 +19,87 @@
         </nav>
         <img src="../../assets/background.jpg" alt ="imagem de fundo">   
     </header>
+
+    <div class="resumo">
+        <h1>Surfe</h1>
+        <div class="resumoC">
+        <p>
+            O surfe ou surf é um esporte feito na superfície (seu nome provém da palavra inglesa “surface”) da 
+            água. Basicamente, consiste no deslize pelas ondas do mar através de uma prancha. O surfe é originário 
+            da Polinésia, um conjunto de ilhas do Pacífico. Acredita-se que o esporte surgiu quando pescadores 
+            perceberam que usando uma tábua de madeira, era mais fácil chegar à margem do mar. 
+        </p>
+
+        </div>
+    </div>
+
+    <main>
+        <div Class="lista">
+
+            <img src="../../assets/surf/surf1.webp" alt="imagem do esporte">
+            <p>Os acessórios principais no surfe são as pranchas, que podem possuir diversos tamanhos e formatos. 
+            Uma boa prancha é indispensável para o bom desempenho do esporte. É recomendável que iniciantes 
+            optem pelas pranchas maiores, conhecidas como long boards. Além de ser um esporte que proporciona um 
+            intenso contato com a natureza, o surfe trabalha com todos os grupos musculares e desenvolve a 
+            coordenação motora do indivíduo.
+            </p>
+
+            <img src="../../assets/surf/surf2.webp" alt="imagem do esporte">
+            <p>Assim como todos os esportes, a prática do surfe requer alguns cuidados. É recomendável a realização 
+            de aulas de surfe antes de se aventurar no mar em cima de uma prancha. É na aula que o aluno recebe 
+            noções referentes a movimentos básicos, alongamento, ondas, marés, ventos, etc. Além disso, deve-se 
+            ter cautela na escolha das ondas, visto que marouços (ondas grandes) podem ser perigosos para 
+            iniciantes. O surfe é apaixonante para seus adeptos, e se tomados os cuidados necessários, continua 
+            sendo uma ótima opção de esporte.
+            </p>
+
+            <img src="../../assets/surf/surf3.jpg" alt="imagem do esporte">
+            
+        </div>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popupContent">
+
+          <span id="fecharpopup" class="botao-fechar">&times;</span>
+          <h2>Deixe seu feedback</h2>
+
+          <form id="formulario">
+            <label for="avaliacao">Nota (1 a 5):</label>
+            <input type="number" id="avaliacao" name="avaliacao" min="1" max="5" required><br><br>
+            <label for="comentario">Comentário:</label><br>
+            <textarea style="resize: none;" id="comentario" name="comentario" rows="5" cols="30"></textarea><br><br>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+    </div>
+
+    <div id="popuplogin" class="popuplogin" style="display: none;">
+        <div class="loginContent">
+            <span id="fecharpopuplogin" class="botao-fecharlogin">&times;</span>
+
+            <form id="loginForm">
+            <h2>Insira os dados:</h2>
+            
+            <div class="dados">
+            <label for="txtemail">E-mail:</label>
+            <input id="txtemail" type="text" placeholder = "digite o login"><br>
+            <label for="txtsenha">Senha:</label>
+            <input id="txtsenha" type="password" placeholder = "digite a senha"><br>
+            </div>
+
+            <button type="submit" id="btnlogin">Acessar</button><br><br>
+
+            <p>não tem uma conta?     <a href="#">Criar conta</a></p>
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 - Todos os direitos reservados</p>
+    </footer>
+    <script src = "../../script.js"></script>
+</body>
+
+</html>

@@ -19,3 +19,101 @@
         </nav>
         <img src="../../assets/background.jpg" alt ="imagem de fundo">   
     </header>
+
+    <div class="resumo">
+        <h1>Mountain bike</h1>
+        <div class="resumoC">
+        <p>
+            Nessa prática, o ciclista deve superar uma série de desafios: subidas íngremes, rochas, curvas 
+            intensas e subidas que dão um frio na barriga. 
+        </p>
+        <p>
+            O ciclismo de montanha é um esporte que envolve resistência, destreza, concentração e autossuficiência. 
+            Como é comum a prática do esporte em locais isolados, o aspecto de autossuficiência é importante 
+            para que o ciclista consiga realizar pequenos reparos em sua bicicleta, e concentração por ser um 
+            esporte que exige muito do psicológico para enfrentar os diversos obstáculos.
+        </p>
+        <p>
+            <strong>Aqui estão algumas das modalidades:</strong>
+        </p>
+        </div>
+    </div>
+
+    <main>
+        <div Class="lista">
+
+            <h1>1°</h1>
+            <h2>Cross country</h2>
+            <img src="../../assets/mtb/crosscountry.jpg" alt="imagem do esporte">
+            <p>Chamada de XC, essa categoria pode ser realizada com bicicletas de passeio ou de competição. 
+                Seja como for, a regra é que o ciclista pedale rapidamente, tanto em distâncias longas, 
+                quanto nas menores. Estamos falando de uma modalidade que exige muito conhecimento técnico e, 
+                claro, esforço físico do praticante. 
+            </p>
+
+            <h1>2°</h1>
+            <h2>Maratona</h2>
+            <img src="../../assets/mtb/maratona.jpg" alt="imagem do esporte">
+            <p>Consiste em uma extensão do clássico cross country. No entanto, conta com percursos bem mais 
+                longos, como acontece na prova Brasil Ride — uma supermaratona, em que os atletas pedalam 
+                centenas de quilômetros durante diversos dias. 
+                </p>
+            </p>
+
+            <h1>3°</h1>
+            <h2>Downhill</h2>
+            <img src="../../assets/mtb/downhill.jpg" alt="imagem do esporte">
+            <p>Modalidade com foco em percorrer um caminho composto por descidas. É importante que o ciclista 
+                realize o percurso em alta velocidade e, mesmo assim, consiga driblar variados obstáculos. 
+                Por essas e outras, é necessário que o atleta tenha não apenas entendimento técnico, mas sim 
+                atenção e destreza para fazer bons saltos e desviar de barreiras.
+            </p>
+            
+        </div>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popupContent">
+
+          <span id="fecharpopup" class="botao-fechar">&times;</span>
+          <h2>Deixe seu feedback</h2>
+
+          <form id="formulario">
+            <label for="avaliacao">Nota (1 a 5):</label>
+            <input type="number" id="avaliacao" name="avaliacao" min="1" max="5" required><br><br>
+            <label for="comentario">Comentário:</label><br>
+            <textarea style="resize: none;" id="comentario" name="comentario" rows="5" cols="30"></textarea><br><br>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+    </div>
+
+    <div id="popuplogin" class="popuplogin" style="display: none;">
+        <div class="loginContent">
+            <span id="fecharpopuplogin" class="botao-fecharlogin">&times;</span>
+
+            <form id="loginForm">
+            <h2>Insira os dados:</h2>
+            
+            <div class="dados">
+            <label for="txtemail">E-mail:</label>
+            <input id="txtemail" type="text" placeholder = "digite o login"><br>
+            <label for="txtsenha">Senha:</label>
+            <input id="txtsenha" type="password" placeholder = "digite a senha"><br>
+            </div>
+
+            <button type="submit" id="btnlogin">Acessar</button><br><br>
+
+            <p>não tem uma conta?     <a href="#">Criar conta</a></p>
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 - Todos os direitos reservados</p>
+    </footer>
+    <script src = "../../script.js"></script>
+</body>
+
+</html>
