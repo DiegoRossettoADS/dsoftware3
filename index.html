@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="#" onclick="Avaliar()">Avaliar</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
                 <li><a href="#" onclick="logar()">Login</a></li>
             </ul>
         </nav>
@@ -82,6 +82,32 @@
         </div>
     </main>
 
+    <section>
+        <div class="sobre">
+            <h1 id="Sobre">Sobre esta página:</h1>
+            <p>
+                Criada para os apaixonados por adrenalina e liberdade, esta página é um espaço dedicado a quem 
+                busca se conectar com a natureza, testar os próprios limites e viver aventuras inesquecíveis.
+            </p>
+            <P>
+                Aqui você encontra informações acessíveis sobre diversos esportes radicais, como: surf, escalada, 
+                paraquedismo, mountain bike, e muito mais. Tudo acompanhado de dicas úteis para quem está começando 
+                e quer praticar com segurança e entusiasmo.
+            </P>
+            <P>
+                Com o propósito de ajudar você a sair da rotina, descobrir novos horizontes e se motivar a viver com 
+                mais intensidade.
+            </P>
+            <h2>Motivação para o projeto:</h2>
+            <p>
+                Desenvolvi este site como forma de fortalecer minhas habilidades em desenvolvimento web, 
+                inspirado por uma das minhas maiores paixões: aventuras. O projeto representa tanto um exercício 
+                técnico quanto uma expressão pessoal.
+
+            </p>
+        </div>
+    </section>
+
     <div id="popup" class="popup">
         <div class="popupContent">
 
@@ -114,7 +140,32 @@
 
             <button type="submit" id="btnlogin">Acessar</button><br><br>
 
-            <p>não tem uma conta?     <a href="#">Criar conta</a></p>
+            <p>não tem uma conta?     <a href="#" onclick="Conta()">Criar conta</a></p>
+            </form>
+
+        </div>
+    </div>
+
+    <div id="popupconta" class="formconta" style="display: none;">
+        <div class="contaContent">
+            <span id="fecharpopupconta" class="botao-fecharconta">&times;</span>
+
+            <form id="contaform" onsubmit="enviarConta(event)">
+                <h2>Preencha o formulário:</h2>
+
+                <div class="dadosconta">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" required>
+
+                    <label for="confirmar">Confirmar senha:</label>
+                    <input type="password" id="confirmar" required>
+
+                    <button type="submit" id="btncadastrar">Cadastrar</button>
+
+                </div>
             </form>
 
         </div>

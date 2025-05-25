@@ -72,7 +72,7 @@ header {
         margin-right: 10%; 
     }
 }
-
+/*===================================================================================*/
 main {
     justify-content: center;
     margin-left: 5%;
@@ -125,7 +125,25 @@ main {
 .box:hover {
     transform: scale(1.03);
 }
+/*===================================================================================*/
+section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 
+    .sobre {
+        max-width: 80%;
+        margin: 0% 10% 5% auto;
+        padding: 15px;
+        background-color:rgb(120, 120, 120);
+
+        p {
+            font-size: 18px;
+            padding: 4px;
+        }
+    }
+}
+/*===================================================================================*/
 .lista {
     font-size: 20px;
     text-align: left;
@@ -264,6 +282,62 @@ footer {
 .botao-fecharlogin:hover {
     background-color: firebrick;
 }
+
+/*==================================RETRABALHAR=================================================*/
+
+.formconta {
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.contaContent {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 8px;
+    width: 300px;
+    position: relative;
+
+    h2 {
+        color: yellow;
+        margin: 4px;
+    }
+
+    input {
+        padding: 8px 2px 4px;
+        margin: 4px;
+        padding: 5px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 4px;
+        margin: 6px auto; 
+        display: block;
+    }
+    button:hover{
+        background-color: aquamarine;
+    }
+}
+
+.botao-fecharconta {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    line-height: 1;
+    border-radius: 4px;
+}
+.botao-fecharconta:hover {
+    background-color: firebrick;
+}
+
 /*===================================================================================*/
 /* mobile */
 @media screen and (max-width: 600px) {
