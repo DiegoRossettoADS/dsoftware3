@@ -1,3 +1,5 @@
+//simular banco de dados
+const usuarios = [];
 let usuariologado = null;
 
 function Avaliar(){ 
@@ -31,30 +33,23 @@ function logar(){
     };
 }
 
-const usuarios = [
-    {email: "usuario1@email.com", senha: "123456"},
-    {email: "usuario2@email.com", senha: "654321"},
-    {email: "usuario3@email.com", senha: "541654"},
-    {email: "meu@email.com", senha: "minhasenha"},
-    {email: "teste@email.com", senha: "senhateste"}
-]
-
 function login(event){
     event.preventDefault();
 
     var login = document.getElementById("txtemail").value.trim();
     var senha = document.getElementById("txtsenha").value.trim();
 
-    if (login == "" || senha == ""){
+    if (login === "" || senha === ""){
         alert("Preencha todos os campos.");
         return;
     }
 
-    const validarlogin = usuarios.find(user => user.email == login && user.senha == senha);
+    const validarlogin = usuarios.find(user => user.email === login && user.senha === senha);
 
-    if(validarlogin){
+    if (validarlogin){
         usuariologado = validarlogin;
         alert("login realizado com sucesso");
+
         document.getElementById("popuplogin").style.display = "none";
         document.getElementById("loginForm").reset();
     }
@@ -63,6 +58,7 @@ function login(event){
     }    
 }
 document.getElementById("loginForm").addEventListener("submit", login);
+document.getElementById("contaform").addEventListener("submit", enviarConta);
 /*===================================================================================*/
 
 function Conta(){
@@ -73,27 +69,40 @@ function Conta(){
         document.getElementById("popupconta").style.display = "none";
     };
 }
-/*===============================RETRABALHAR====================================================*/
+/*===================================================================================*/
 function enviarConta(event){
     event.preventDefault();
 
-    var email = document.getElementById("email").value;
-    var senha = document.getElementById("senha").value;
+    var email = document.getElementById("email").value.trim();
+    var senha = document.getElementById("senha").value.trim();
+    var confirmar = document.getElementById("confirmar").value.trim();
 
-    // Simulação de envio (poderia ser um fetch para uma API real)
-    if (email && senha) {
-        console.log("Email:", email);
-        console.log("Senha:", senha);
+    console.log("email:", email, "| senha:", senha, "| confirmar:", confirmar);
 
-        alert("Cadastro realizado com sucesso!");
-
-        // Limpar campos
-        document.getElementById("contaform").reset();
-
-        // Fechar o popup
-        document.getElementById("popupconta").style.display = "none";
-    } else {
-        alert("Por favor, preencha todos os campos.");
+    if (!email || !senha || !confirmar){
+        alert("Preencha todos os campos.");
+        return;
     }
+
+    if (senha !== confirmar) {
+        alert("As senhas não coincidem.");
+        return;
+    }
+
+    const existe = usuarios.find(user => user.email === email);
+    if(existe) {
+        alert("Este email já foi cadastrado.");
+        return;
+    }
+
+    //Simulação de envio
+
+    usuarios.push({email: email, senha: senha});
+
+    console.log("Usuário cadastrado:", {email, senha});
+    alert("Cadastro realizado com sucesso!");
+
+    document.getElementById("contaform").reset();
+    document.getElementById("popupconta").style.display = "none";
 }
 
